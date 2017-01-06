@@ -1,36 +1,36 @@
 [user]
-	name = Stephen Wrathall
-	email = stephen.wrathall@agworld.com.au
+  name = Stephen Wrathall
+  email = stephen.wrathall@agworld.com.au
 [alias]
-	co = checkout
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+  co = checkout
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
 [color]
-	ui = true
+  ui = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [core]
-	editor = vim
+  editor = vim
+  autocrlf = input
 [github]
-	user = stwr667
+  user = stwr667
 [merge]
-	keepBackup = false;
-	tool = p4merge
-	defaultToUpstream = true
+  keepBackup = false;
+  tool = p4merge
+  defaultToUpstream = true
 [push]
-	default = upstream
+  default = upstream
 [mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
+  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = true
 [mergetool "p4merge"]
 #  cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
 # This command opens the mergetool view + 2 diffs of the base to local & remote. It waits for all to close:
-	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED & diffmerge $BASE $LOCAL & diffmerge $BASE $REMOTE & wait
-	trustExitCode = false
-	keepTemporaries = false
-	keepBackup = false
+  cmd = p4merge $BASE $LOCAL $REMOTE $MERGED & diffmerge $BASE $LOCAL & diffmerge $BASE $REMOTE & wait
+  trustExitCode = false
+  keepTemporaries = false
+  keepBackup = false
 [diff]
-	tool = diffmerge
+  tool = diffmerge
 [difftool "diffmerge"]
-	cmd = diffmerge $LOCAL $REMOTE
-
+  cmd = diffmerge $LOCAL $REMOTE
