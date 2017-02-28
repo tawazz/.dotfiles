@@ -18,7 +18,7 @@
   keepBackup = false;
   tool = p4merge
   defaultToUpstream = true
-  ff = true
+  ff = false
 [push]
   default = upstream
 [mergetool "diffmerge"]
