@@ -39,8 +39,8 @@ noremap Y y$
 "Increase history
 set history=500
 
-"Set the place where all the VIM backup files are stored:
-"set backupdir=C:\Temp\VimBackupFiles
+"Set the directory where all the VIM backup files are stored:
+set backupdir=~/vimBackupFiles
 
 "Let %% expand to the current path. E.g. :e %%\    (expands)
 cabbr <expr> %% expand('%:p:h')
