@@ -35,3 +35,5 @@
   tool = diffmerge
 [difftool "diffmerge"]
   cmd = diffmerge $LOCAL $REMOTE
+[pull]
+  ff = true
