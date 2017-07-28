@@ -1,0 +1,131 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+        "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-117621-18170-7pr6ys.1woisk0529"
+    ]
+  ],
+  "_from": "../d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+  "_id": "vue-hyperclick@0.2.0",
+  "_inCache": true,
+  "_location": "/vue-hyperclick",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+    "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+  "_shasum": "82b359779033abe8deb8709cb5b72e3e7ed6d997",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18170-uitox9.2vtok9y66r/package.tgz",
+  "_where": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-117621-18170-7pr6ys.1woisk0529",
+  "bugs": {
+    "url": "https://github.com/monterail/atom-vue-hyperclick/issues"
+  },
+  "dependencies": {
+    "vue-template-compiler": "^2.0.0-rc.3"
+  },
+  "description": "A hyperclick provider for Vue components that lets you jump to where variables are defined.",
+  "devDependencies": {
+    "eslint": "^3.7.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/monterail/atom-vue-hyperclick#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/vue-hyperclick",
+  "moduleRoots": [
+    "lib"
+  ],
+  "name": "vue-hyperclick",
+  "optionalDependencies": {},
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# vue-hyperclick\n\n![vue-hyperclick in action](https://frizi.xyz/externals/vue-hyperclick-demo.gif)\n\nA hyperclick provider for Vue components that lets you jump to where variables are defined.\n\nSupports jumping between all combinations of `*.vue` and `*.js` files\n\n## dependencies\n- `js-hyperclick` plugin has to be installed to provide core js hyperclick capabilities\n- `language-vue` plugin is required to detect `*.vue` grammar correctly\n\n## installation\n\nInstall via atom or apm:\n```\napm install vue-hyperclick js-hyperclick hyperclick language-vue\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monterail/atom-vue-hyperclick.git"
+  },
+  "version": "0.2.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "de-indent",
+        "version": "1.0.2",
+        "path": "node_modules/de-indent/index.js"
+      },
+      {
+        "name": "he",
+        "version": "1.1.1",
+        "path": "node_modules/he/he.js"
+      },
+      {
+        "name": "vue-template-compiler",
+        "version": "2.4.2",
+        "path": "node_modules/vue-template-compiler/index.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/parse-code.js",
+        "lib/vue-hyperclick.js",
+        "node_modules/de-indent/index.js",
+        "node_modules/de-indent/test.js",
+        "node_modules/he/he.js",
+        "node_modules/vue-template-compiler/build.js",
+        "node_modules/vue-template-compiler/index.js"
+      ],
+      ".json": [
+        "node_modules/de-indent/package.json",
+        "node_modules/he/package.json",
+        "node_modules/vue-template-compiler/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "vue-template-compiler": "^2.0.0-rc.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/vue-template-compiler"
+        ],
+        "dependencies": {
+          "de-indent": "^1.0.2",
+          "he": "^1.1.0"
+        }
+      }
+    ]
+  }
+}

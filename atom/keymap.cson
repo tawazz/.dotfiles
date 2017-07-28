@@ -22,7 +22,7 @@
 # * http://flight-manual.atom.io/behind-atom/sections/keymaps-in-depth/
 #
 # If you're having trouble with your keybindings not working, try the
-# Keybinding Resolver: `Cmd+.` on OS X and `Ctrl+.` on other platforms. See the
+# Keybinding Resolver: `Cmd+.` on macOS and `Ctrl+.` on other platforms. See the
 # Debugging Guide for more information:
 # * http://flight-manual.atom.io/hacking-atom/sections/debugging/#check-the-keybindings
 #
@@ -30,12 +30,3 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
-
-'atom-workspace':
-  'cmd-shift-i': 'fuzzy-finder:toggle-git-status-finder'
-  'cmd-shift-b': 'fuzzy-finder:toggle-git-status-finder'
-
-'atom-text-editor':
-  # Ensure that Copy does nothing when nothing is selected.
-  'cmd-c': 'editor:copy-selection'    # mac
-  'ctrl-c': 'editor:copy-selection'   # linux and windows

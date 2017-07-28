@@ -26,34 +26,7 @@ atom-text-editor {
   // background-color: hsl(180, 24%, 12%);
 }
 
-// To style other content in the text editor's shadow DOM, use the ::shadow expression
-atom-text-editor::shadow .cursor {
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
   // border-color: red;
-}
-
-// Make the unsaved-changes blue icon bigger to be more obvious
-.tab-bar .tab.modified:not(:hover) .close-icon {
-  transform: scale(1.3);
-}
-
-// Hide the close (x) tab button on hover. Just rely on Command+W or Middle click
-.tab-bar .tab:hover .close-icon {
-  z-index: -2;
-}
-
-// Infinite atom tabs, wrapped vertically
-// For other options, see this thread:
-// https://github.com/atom/tabs/issues/136#issuecomment-203740282
-.tab-bar {
-  -webkit-flex-wrap: wrap;
-  height: auto;
-  .tab, .tab.active {
-    -webkit-flex: initial;
-    .title {
-      // removing the mask is optional but not really needed in this mode.
-      -webkit-mask: none;
-      // for fixed width tabs, uncomment:
-      // max-width: 11ch;
-    }
-  }
 }

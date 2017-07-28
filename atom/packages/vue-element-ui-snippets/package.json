@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+        "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-11769-44304-1ow630e.detajj1yvi"
+    ]
+  ],
+  "_from": "../d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+  "_id": "vue-element-ui-snippets@0.7.0",
+  "_inCache": true,
+  "_location": "/vue-element-ui-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+    "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+  "_shasum": "886bce9c8e13c5636a24f06e4d4ec6aaf227a354",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-11769-44304-1qawygl.mhtlc8fr/package.tgz",
+  "_where": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-11769-44304-1ow630e.detajj1yvi",
+  "author": {
+    "name": "Tomas Yang"
+  },
+  "bugs": {
+    "url": "https://github.com/solobat/vue-element-ui-snippets/issues"
+  },
+  "dependencies": {},
+  "description": "Vue element ui snippets",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/solobat/vue-element-ui-snippets#readme",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "components",
+    "snippets",
+    "element"
+  ],
+  "license": "MIT",
+  "name": "vue-element-ui-snippets",
+  "optionalDependencies": {},
+  "readme": "# vue-element-ui-snippets package\nsome snippets for [element-ui](http://element.eleme.io/#/component/installation)\n\n## snippets\n### basic\n+ `ebr: <el-row>`\n+ `ebc: <el-col>`\n+ `ebi: icon`\n+ `ebb: <el-button>`\n+ `ebbg: <el-button-group>`\n\n### data\n+ `edt: <el-table>`\n+ `edtc: <el-table-column>`\n+ `edtg: <el-tag>`\n\n### form\n+ `efr: <el-radio>`\n+ `efrg: <el-radio-group>`\n+ `efrb: <el-radio-button>`\n+ `efc: <el-checkbox>`\n+ `efcg: <el-checkbox-group>`\n+ `efi: <el-input>`\n+ `efac: <el-autocomplete>`\n+ `efin: <el-input-number>`\n+ `efs: <el-select>`\n+ `efsw: <el-switch>`\n+ `efsl: <el-slider>`\n+ `efts: <el-time-select>`\n+ `efdp: <el-date-picker>`\n+ `eful: <el-upload>`\n+ `effi: <el-form-item>`\n+ `efrt: <el-rate>`\n\n### nav\n+ ...TODO\n\n### notice\n+ `ena: <el-alert>`\n+ `enm: this.$message('$1')`\n+ `enmt: this.$message({\n  message: '$1',\n  type: '${2: success}'\n})`\n+ `enn: this.$notify({\n  title: '$1',\n  message: '$2'\n})`\n\n### others\n+ `eod: <el-dialog>`\n+ `eoc: <el-card>`\n+ `eop: <el-popover>`\n+ `eot: <el-tooltip>`\n+ `eocrl: <el-carousel>`\n+ `eocp: <el-collapse>`\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solobat/vue-element-ui-snippets.git"
+  },
+  "version": "0.7.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
