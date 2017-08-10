@@ -1,26 +1,26 @@
 [user]
-  name = Stephen Wrathall
-  email = stephen.wrathall@agworld.com.au
+	name = Tawanda Nyakudjga
+	email = tawanda.nyakudjga@agworld.com.au
 [alias]
   co = checkout
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
 [color]
   ui = true
-[credential]
-  helper = osxkeychain
 [core]
-  editor = vim
-  autocrlf = input
+  editor = nano
+	autocrlf = true
+	excludesfile = /Users/tnyakudjga/.gitignore_global
+	eol = lf
 [github]
-  user = stwr667
+  user = tawazz
 [merge]
   keepBackup = false;
   tool = p4merge
   defaultToUpstream = true
   ff = false
 [push]
-  default = upstream
+	default = simple
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
   trustExitCode = true
@@ -37,3 +37,11 @@
   cmd = diffmerge $LOCAL $REMOTE
 [pull]
   ff = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/tnyakudjga/.stCommitMsg

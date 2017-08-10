@@ -1,6 +1,6 @@
 "*":
   "activate-power-mode":
-    autoToggle: false
+    autoToggle: true
   "atom-beautify":
     general:
       _analyticsUserId: "685322f1-fe33-4a0a-a771-8ff54cf1c10d"
@@ -34,17 +34,21 @@
     legacyMode: true
   core:
     audioBeep: false
-    automaticallyUpdate: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "spell-check"
+      "activate-power-mode"
+      "minimap-cursorline"
+      "minimap-find-and-replace"
+      "minimap-git-diff"
+      "minimap-highlight-selected"
+      "minimap-linter"
     ]
-    projectHome: "/Users/swrathal/code"
+    projectHome: "/Users/tnyakudjga/dev/website"
     telemetryConsent: "limited"
-    themes: [
-      "one-dark-ui"
-      "monokai"
-    ]
+    titleBar: "custom"
   editor:
+    fontSize: 19
     preferredLineLength: 120
     showIndentGuide: true
     tabType: "soft"
@@ -59,7 +63,25 @@
     lintPreviewTabs: false
   "linter-rubocop": {}
   "linter-ui-default":
+    panelHeight: 69
+    showPanel: true
     showProviderName: true
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
   "toggle-quotes": {}
   welcome:
     showOnStartup: false

@@ -2,8 +2,8 @@
 export HISTSIZE=50000
 export HISTFILESIZE=500000
 
-# Set my editor to sublime:
-export EDITOR=sublime
+# Set my editor to atom:
+export EDITOR=atom
 
 # load all my aliases
 source $HOME/.dotfiles/bash/bash_aliases

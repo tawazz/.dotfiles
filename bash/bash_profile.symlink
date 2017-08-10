@@ -16,6 +16,8 @@ export PGDATA='/usr/local/var/postgres/'
 #UPDATE: Shouldn't need these params. Re-installing postgres from brew fixed this issue:
 #sudo sysctl -w kern.sysv.shmall=65536
 #sudo sysctl -w kern.sysv.shmmax=16777216
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log stop'
 ### END POSTGRES###
 
 # Running bundle install doesn't work for website because of libv8 needing native extensions.
@@ -59,7 +61,7 @@ get_region_and_rails_env() {
 }
 
 export PS1="\[\033[01;34m\]\W\[\033[31m\]\$(parse_git_branch)\[\033[33m\]\$(get_region_and_rails_env) \[\033[00m\]$\[\033[00m\] "
-export PATH=/Users/swrathal/bin:/usr/local/bin:/usr/local/sbin:$PATH:./node_modules/.bin
+export PATH=/Users/tnyakudjga/bin:/usr/local/bin:/usr/local/sbin:$PATH:./node_modules/.bin
 export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
 
 # This must be below the PATH command above, otherwise the 'node' in /usr/local/bin overrides nvm:
