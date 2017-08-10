@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # The personal bash profile options
 source $HOME/.dotfiles/bash/bash_personal
 

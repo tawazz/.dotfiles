@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+        "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-117621-18159-1cxojjo.pifs3v7vi"
+    ]
+  ],
+  "_from": "../d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+  "_id": "hyperclick-php@0.2.1",
+  "_inCache": true,
+  "_location": "/hyperclick-php",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+    "spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+  "_shasum": "5ea2f5c45bb688216fc65bf3841b1c1f6f7bda40",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/d-117621-18159-1xol4rg.tqcqyta9k9/package.tgz",
+  "_where": "/private/var/folders/hb/_s38v7jn0px2t4flg7lvsc0m0000gn/T/apm-install-dir-117621-18159-1cxojjo.pifs3v7vi",
+  "author": {
+    "name": "Clayton Carter"
+  },
+  "bugs": {
+    "url": "https://github.com/claytonrcarter/hyperclick-php/issues"
+  },
+  "dependencies": {},
+  "description": "Hyperclick support for PHP",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/claytonrcarter/hyperclick-php#readme",
+  "keywords": [
+    "hyperclick",
+    "php"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "hyperclick-php",
+  "optionalDependencies": {},
+  "providedServices": {
+    "hyperclick.provider": {
+      "versions": {
+        "0.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# Hyperclick PHP\n\nA *very* simple [Hyperclick](https://github.com/facebooknuclideapm/hyperclick)\nprovider for PHP.  Inspired by [js-hyperclick](https://github.com/AsaAyers/js-hyperclick).\nHyperclick package is required.\n\n### Usage\n`<cmd-click>` on a supported word to jump it's declaration or location.\n\n### Features\n* **Variables**: jump to their last definition in current file.\n* **Required/Included Files**: open file in new pane, or - if already open - jump to it's pane in editor.\n* Will attempt to resolve **included files** in current directory, then parent directories, until project root is reached\n* **Functions**: jump to their definition in the current file.\n\n### Known Issues\n* originally designed to handle a morass of procedural code (ie not object definitions)\n* only works for variables & functions defined in the current file\n* array references/definitions don't work\n* pays no attention to scope or if a variable was defined as part of function prototype\n* probably won't work with object instance variables\n\nso ... to reiterate: *very* simple\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claytonrcarter/hyperclick-php.git"
+  },
+  "version": "0.2.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".js": [
+        "lib/main.js"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
