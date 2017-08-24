@@ -1,19 +1,29 @@
 "*":
+  "atom-autocomplete-php":
+    binPhp: "/usr/local/php5/bin/php"
   "atom-beautify":
     js:
       beautify_on_save: true
+    php: {}
+  "autocomplete-php": {}
   core:
+    disabledPackages: [
+      "atom-autocomplete-php"
+      "emmet"
+      "hyperclick-php"
+    ]
     telemetryConsent: "no"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax"
+      "pure-syntax"
     ]
-  editor:
-    tabLength: 4
+  editor: {}
   "exception-reporting":
     userId: "91c7831e-2b49-433c-8f21-5ba94704f6a6"
+  "linter-php":
+    executablePath: "/usr/local/php5/bin/php"
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 81
   minimap:
     plugins:
       cursorline: true
@@ -26,8 +36,13 @@
       pigmentsDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
+  "php-debug":
+    currentPanelMode: "bottom"
   "platformio-ide-terminal":
     style:
       theme: "one-dark"
   welcome:
     showOnStartup: false
+".html.php.text":
+  editor:
+    showIndentGuide: true

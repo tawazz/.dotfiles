@@ -74,10 +74,14 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gc='git clone'
 alias gco='git checkout'
+commit() {
+	git commit -m $1;
+}
 
 
 # docker
 
+alias dk='docker'
 # Get latest container ID
 alias dlc="docker ps -l -q"
 
@@ -100,7 +104,7 @@ alias drd="docker run -d"
 alias drt="docker run -i -t"
 
 # Execute interactive container, e.g., $dex base /bin/bash
-alias dex="docker exec -i -t"
+dex() { docker exec -ti $1 /bin/bash; }
 
 # Stop all containers
 dstop() { docker stop $(docker ps -a -q); }
@@ -128,3 +132,7 @@ alias dks='docker stop'
 
 # stop and remove
 dksr() { docker stop $1 && docker rm $1; }
+
+# clean atom
+
+alias atom_clean="atom --clear-window-state"
