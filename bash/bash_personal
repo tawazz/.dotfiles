@@ -13,3 +13,22 @@ source $HOME/.dotfiles/bash/functions
 
 # Important for easy setting of terminal colours. Needed now for tig colours to work:
 export TERM=xterm-256color
+eval "$(rash init)"
+
+export PKG_CONFIG_PATH="/usr/local/opt/libxslt/lib/pkgconfig:/usr/local/opt/libxml2/lib/pkgconfig"
+
+function rebuild_cal() {
+  bundle exec thor calculation_seeder:all_the_things \
+  && git checkout db/calculations/locations.sql \
+  && rake db:structure:dump
+}
+
+# postgres
+
+alias pg_start="/usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres &"
+alias pg_stop="pg_ctl stop"
+
+
+# process
+
+proc_status() { ps aux | grep $1 ; }

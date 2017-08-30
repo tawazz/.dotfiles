@@ -279,7 +279,7 @@ alias drd="docker run -d"
 alias drt="docker run -i -t"
 
 # Execute interactive container, e.g., $dex base /bin/bash
-alias dex="docker exec -i -t"
+dex(){ docker exec -ti $1 /bin/bash; }
 
 # Stop all containers
 dstop() { docker stop $(docker ps -a -q); }

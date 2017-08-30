@@ -1,21 +1,30 @@
 "*":
   "atom-beautify":
+    general:
+      _analyticsUserId: "aa8a0807-4da5-4392-8a64-6d8036e749c4"
     js:
-      beautify_on_save: true
+      preserve_newlines: false
   core:
     audioBeep: false
     closeDeletedFileTabs: true
     disabledPackages: [
       "spell-check"
-      "activate-power-mode"
       "minimap-cursorline"
       "minimap-find-and-replace"
       "minimap-git-diff"
       "minimap-highlight-selected"
       "minimap-linter"
+      "php-debug"
+      "minimap"
+      "minimap-pigments"
+      "minimap-selection"
     ]
     projectHome: "/Users/tnyakudjga/dev/website"
     telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
     titleBar: "custom"
   editor:
     fontSize: 19
@@ -29,9 +38,7 @@
   "exception-reporting":
     userId: "91c7831e-2b49-433c-8f21-5ba94704f6a6"
   "linter-ui-default":
-<<<<<<< HEAD
-    panelHeight: 69
-    showPanel: true
+    panelHeight: 81
     showProviderName: true
   minimap:
     plugins:
@@ -49,9 +56,20 @@
       pigmentsDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
-  "toggle-quotes": {}
+  "php-debug":
+    PathMaps: [
+      "remotepath;localpath"
+      "/app;/Users/tnyakudjga/dev/spendee"
+    ]
+    PhpException:
+      FatalError: false
+      UnknownError: false
+      Warning: false
+    ServerAddress: "172.17.0.1"
+    currentPanelMode: "bottom"
   "platformio-ide-terminal":
     style:
       theme: "one-dark"
+  "toggle-quotes": {}
   welcome:
     showOnStartup: false
